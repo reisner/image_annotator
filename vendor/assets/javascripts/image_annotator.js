@@ -7,12 +7,6 @@
 // ...will probably be broken for input_method = "fixed" or "text"
 
 (function() {
-  // Use coffee-script compiler to obtain a javascript file.
-
-  //    coffee -c bbox_annotator.coffee
-
-  // See http://coffeescript.org/
-
   // BBox selection window.
   var BBoxSelector;
 
@@ -187,7 +181,7 @@
     constructor(options) {
       var annotator, image_element;
       annotator = this;
-      this.annotator_element = $(options.id || "#bbox_annotator");
+      this.annotator_element = $(options.id || "#image_annotator");
       // allow us to access colors and labels in future steps
       this.color_list = options.color_list; // Should be the same length as labels
       this.label_list = options.labels;
